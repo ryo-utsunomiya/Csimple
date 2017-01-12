@@ -4,12 +4,7 @@ namespace Csimple
 {
     public class Container
     {
-        private readonly Dictionary<string, object> _dictionary;
-
-        public Container(Dictionary<string, object> dictionary = null)
-        {
-            _dictionary = dictionary ?? new Dictionary<string, object>();
-        }
+        private readonly Dictionary<string, object> _dictionary = new Dictionary<string, object>();
 
         public void Add(string key, object value)
         {
